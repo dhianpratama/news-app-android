@@ -7,7 +7,7 @@ android {
     buildToolsVersion "27.0.2"
 
     defaultConfig {
-        applicationId "com.praise.newsapp"
+        applicationId "com.dhian.newsapp"
         minSdkVersion 19
         targetSdkVersion 33
         versionCode 1
@@ -27,7 +27,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    namespace 'com.praise.newsapp'
+    namespace 'com.dhian.newsapp'
 }
 
 dependencies {

@@ -1,4 +1,4 @@
-package com.praise.newsapp.Model;
+package com.dhian.newsapp.Model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

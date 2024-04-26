@@ -1,4 +1,4 @@
-package com.praise.newsapp;
+package com.dhian.newsapp;
 
 
 import android.app.Activity;
@@ -7,7 +7,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 
 
@@ -19,8 +18,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.praise.newsapp.Model.Articles;
-import com.praise.newsapp.Model.Headlines;
+import com.dhian.newsapp.Model.Articles;
+import com.dhian.newsapp.Model.Headlines;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,8 +29,6 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-
-//visit "https://newsapi.org/v2/" and request for your own private API KEY
 public class MainActivity extends AppCompatActivity {
     final String API_KEY = "2fdf8ffd223d466384b5bd5c0a89094f";
     RecyclerView newsRecyclerView;

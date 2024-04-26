@@ -1,4 +1,4 @@
-package com.praise.newsapp;
+package com.dhian.newsapp;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.praise.newsapp.Model.Articles;
+import com.dhian.newsapp.Model.Articles;
 import com.squareup.picasso.Picasso;
 
 import org.ocpsoft.prettytime.PrettyTime;

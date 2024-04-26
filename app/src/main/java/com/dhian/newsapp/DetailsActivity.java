@@ -1,4 +1,4 @@
-package com.praise.newsapp;
+package com.dhian.newsapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -10,8 +10,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.praise.newsapp.Model.Articles;
-import com.praise.newsapp.Model.Headlines;
+import com.dhian.newsapp.Model.Articles;
+import com.dhian.newsapp.Model.Headlines;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

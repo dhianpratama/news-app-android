@@ -1,4 +1,4 @@
-package com.praise.newsapp;
+package com.dhian.newsapp;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

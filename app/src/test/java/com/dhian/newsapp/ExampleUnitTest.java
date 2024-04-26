@@ -1,4 +1,4 @@
-package com.praise.newsapp;
+package com.dhian.newsapp;
 
 import org.junit.Test;
 

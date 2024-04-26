@@ -1,7 +1,6 @@
-package com.praise.newsapp;
+package com.dhian.newsapp;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,19 +8,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.praise.newsapp.Model.Articles;
+import com.dhian.newsapp.Model.Articles;
 import com.squareup.picasso.Picasso;
 
-import org.ocpsoft.prettytime.PrettyTime;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 public class StoriesAdapter extends RecyclerView.Adapter<StoriesAdapter.ViewHolder> {
 
@@ -49,19 +41,6 @@ public class StoriesAdapter extends RecyclerView.Adapter<StoriesAdapter.ViewHold
         String imageUrl = a.getUrlToImage();
         holder.image.setImageAlpha(70);
         Picasso.get().load(imageUrl).into(holder.image);
-//        holder.cardView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(context,Details.class);
-//                intent.putExtra("title", a.getTitle());
-//                intent.putExtra("source", a.getSource().getName());
-//                intent.putExtra("time", dateTime(a.getPublishedAt()));
-//                intent.putExtra("imageUrl", a.getUrlToImage());
-//                intent.putExtra("url",a.getUrl());
-//                intent.putExtra("desc",a.getDescription());
-//                context.startActivity(intent);
-//            }
-//        });
     }
 
     @Override

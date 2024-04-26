@@ -1,6 +1,6 @@
-package com.praise.newsapp;
+package com.dhian.newsapp;
 
-import com.praise.newsapp.Model.Headlines;
+import com.dhian.newsapp.Model.Headlines;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
