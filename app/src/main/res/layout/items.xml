@@ -24,7 +24,7 @@
                 android:layout_gravity="center" />
 
             <ImageView
-                android:id="@+id/idIVRelatedNewsImage"
+                android:id="@+id/idRelatedNewsImage"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:scaleType="centerCrop"
@@ -48,7 +48,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="98dp"
-                android:layout_below="@id/idIVRelatedNewsImage"
+                android:layout_below="@id/idRelatedNewsImage"
                 android:layout_gravity="bottom"
                 android:orientation="horizontal"
                 android:padding="10dp">

@@ -151,9 +151,6 @@ public class MainActivity extends AppCompatActivity {
         closeDrawer(drawerLayout);
     }
 
-    public void ClickTrivia(View view) {
-        redirectActivity(this, Trivia.class);
-    }
 
     public void ClickLogout(View view) {
         logout(this);

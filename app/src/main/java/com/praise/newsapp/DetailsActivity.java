@@ -21,7 +21,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class Details extends AppCompatActivity {
+public class DetailsActivity extends AppCompatActivity {
     final String API_KEY = "2fdf8ffd223d466384b5bd5c0a89094f";
 
     TextView tvTitle, tvSource, tvDate, tvDesc;
@@ -74,7 +74,7 @@ public class Details extends AppCompatActivity {
                 if (response.isSuccessful() && response.body().getArticles() != null) {
                     articles.clear();
                     articles = response.body().getArticles();
-                    newsAdapter = new RelatedNewsAdapter(Details.this, articles);
+                    newsAdapter = new RelatedNewsAdapter(DetailsActivity.this, articles);
                     newsRecyclerView.setAdapter(newsAdapter);
                 }
             }

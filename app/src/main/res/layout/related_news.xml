@@ -18,7 +18,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/idIVRelatedNewsImage"
+                android:id="@+id/idRelatedNewsImage"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:scaleType="centerCrop"
@@ -27,7 +27,7 @@
             <LinearLayout
                 android:layout_width="200dp"
                 android:layout_height="150dp"
-                android:layout_below="@+id/idIVRelatedNewsImage"
+                android:layout_below="@+id/idRelatedNewsImage"
                 android:layout_gravity="top"
                 android:orientation="vertical"
                 android:padding="10dp">

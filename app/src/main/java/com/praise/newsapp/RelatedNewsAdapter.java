@@ -36,7 +36,7 @@ public class RelatedNewsAdapter extends RecyclerView.Adapter<RelatedNewsAdapter.
     @NonNull
     @Override
     public RelatedNewsAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.items,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.related_news,parent,false);
 
         return new ViewHolder(view);
     }
@@ -53,7 +53,7 @@ public class RelatedNewsAdapter extends RecyclerView.Adapter<RelatedNewsAdapter.
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context,Details.class);
+                Intent intent = new Intent(context, DetailsActivity.class);
                 intent.putExtra("title", a.getTitle());
                 intent.putExtra("source", a.getSource().getName());
                 intent.putExtra("time", dateTime(a.getPublishedAt()));
@@ -79,7 +79,7 @@ public class RelatedNewsAdapter extends RecyclerView.Adapter<RelatedNewsAdapter.
             tvTitle = itemView.findViewById(R.id.tvRelatedTitle);
             tvSource = itemView.findViewById(R.id.tvRelatedDescription);
             tvDate = itemView.findViewById(R.id.tvRelatedDate);
-            imageView = itemView.findViewById(R.id.idIVRelatedNewsImage);
+            imageView = itemView.findViewById(R.id.idRelatedNewsImage);
             cardView = itemView.findViewById(R.id.cardView);
         }
     }

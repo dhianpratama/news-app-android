@@ -12,8 +12,7 @@
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.NewsApp">
-        <activity android:name=".Trivia"></activity>
-        <activity android:name=".Details" />
+        <activity android:name=".DetailsActivity" />
         <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
