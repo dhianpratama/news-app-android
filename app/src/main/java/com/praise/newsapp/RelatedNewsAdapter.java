@@ -48,7 +48,6 @@ public class RelatedNewsAdapter extends RecyclerView.Adapter<RelatedNewsAdapter.
         holder.tvSource.setText(a.getTitle());
         holder.tvDate.setText("\u2022"+dateTime(a.getPublishedAt()));
         String imageUrl = a.getUrlToImage();
-        String url = a.getUrl();
         Picasso.get().load(imageUrl).into(holder.imageView);
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override

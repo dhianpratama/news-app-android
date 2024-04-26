@@ -16,6 +16,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -61,7 +62,7 @@ public class DetailsActivity extends AppCompatActivity {
         tvDesc.setText(desc);
         Picasso.get().load(imageUrl).into(i);
 
-        retrieveJson("", "au", API_KEY);
+        retrieveJson("", getCountry(), API_KEY);
     }
 
     public void retrieveJson(String query, String country, String apikey) {
@@ -82,5 +83,11 @@ public class DetailsActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<Headlines> call, Throwable t) { }
         });
+    }
+
+    public  String getCountry(){
+        Locale locale = Locale.getDefault();
+        String country  = locale.getCountry();
+        return  country.toLowerCase();
     }
 }

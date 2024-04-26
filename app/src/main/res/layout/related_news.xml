@@ -27,7 +27,7 @@
             <LinearLayout
                 android:layout_width="200dp"
                 android:layout_height="150dp"
-                android:layout_below="@+id/idRelatedNewsImage"
+                android:layout_below="@+id/idNewsImage"
                 android:layout_gravity="top"
                 android:orientation="vertical"
                 android:padding="10dp">

@@ -17,14 +17,8 @@
             android:layout_width="match_parent"
             android:layout_height="250dp">
 
-            <ProgressBar
-                android:id="@+id/loader"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center" />
-
             <ImageView
-                android:id="@+id/idRelatedNewsImage"
+                android:id="@+id/idNewsImage"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:scaleType="centerCrop"
@@ -48,7 +42,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="98dp"
-                android:layout_below="@id/idRelatedNewsImage"
+                android:layout_below="@id/idNewsImage"
                 android:layout_gravity="bottom"
                 android:orientation="horizontal"
                 android:padding="10dp">

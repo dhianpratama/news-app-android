@@ -35,12 +35,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="250dp">
 
-                        <ProgressBar
-                            android:id="@+id/loader"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_gravity="center" />
-
                         <ImageView
                             android:id="@+id/imageV"
                             android:layout_width="match_parent"

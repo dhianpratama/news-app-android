@@ -48,7 +48,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
         holder.tvSource.setText(a.getTitle());
         holder.tvDate.setText("\u2022"+dateTime(a.getPublishedAt()));
         String imageUrl = a.getUrlToImage();
-        String url = a.getUrl();
         Picasso.get().load(imageUrl).into(holder.imageView);
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,7 +78,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
             tvTitle = itemView.findViewById(R.id.tvRelatedTitle);
             tvSource = itemView.findViewById(R.id.tvRelatedDescription);
             tvDate = itemView.findViewById(R.id.tvRelatedDate);
-            imageView = itemView.findViewById(R.id.idRelatedNewsImage);
+            imageView = itemView.findViewById(R.id.idNewsImage);
             cardView = itemView.findViewById(R.id.cardView);
 
         }
